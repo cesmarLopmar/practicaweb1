@@ -99,3 +99,12 @@ function CalcularIR(SalBruto){
         return IRAnual / 12;
 }
 
+function calcularSalario(){
+    let SalBase = parseFloat(document.getElementById('inputSalario').value);
+    let inss = SalBase * 0.07;
+    let ir = CalcularIR(SalBase - inss);
+    let SalNeto = SalBase - inss - ir;
+    document.getElementById('txtINSS').innerHTML = "INSS: C$ " + inss.toFixed(2);
+    document.getElementById('txtIR').innerHTML = "IR: C$ " + ir.toFixed(2);
+    document.getElementById('txtSalNeto').innerHTML = "Salario Neto: C$ " + SalNeto.toFixed(2);
+}
