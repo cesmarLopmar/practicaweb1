@@ -4,7 +4,6 @@ function Sumar(){
     document.getElementById("txtResultado").innerHTML = 'La suma es: ' + (num1 + num2);
 }
 
-
 <div class="container py-3" id="ej1">
     <h1 calss="text-center display-1 text-primary">
         Operacion de dos numeros
