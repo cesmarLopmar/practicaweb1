@@ -1,9 +1,10 @@
 function Sumar(){
-    let num1 = parseInt(document.getElementById("txtNum1").value);
-    let num2 = parseInt(document.getElementById("txtNum2").value);
-    let resultado = num1 + num2;
-    document.getElementById("txtResultado").innerHTML = 'Resultado: ' + resultado;
+    var num1 = parseInt(document.getElementById("txtNum1").value);
+    var num2 = parseInt(document.getElementById("txtNum2").value);
+    document.getElementById("txtResultado").innerHTML = 'La suma es: ' + (num1 + num2);
 }
+
+
 <div class="container py-3" id="ej1">
     <h1 calss="text-center display-1 text-primary">
         Operacion de dos numeros
