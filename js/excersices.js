@@ -33,3 +33,23 @@ function Sumar(){
         </div>
     </form> 
 </div>
+function CalcularOperacion(){
+    let op = document.getElementById('selectOp').value;
+    let num1 = parseInt(document.getElementById('txt2Num1').value);
+    let num2 = parseInt(document.getElementById('txt2Num2').value);
+    if(op == 1){
+        alert("Seleccione primero la operacion");
+    }
+    else if(op == 1){
+        document.getElementById('txt2Result').innerHTML = "La suma es: " + (num1 + num2);
+    }
+    else if(op ==2){
+        document.getElementById('txt2Result').innerHTML = "La resta es: " + (num1 - num2);
+    }
+    else if(op == 3){
+        document.getElementById('txt2Result').innerHTML = "El producto es: " + (num1 * num2);
+    }
+    else if(op == 1){
+        document.getElementById('txt2Result').innerHTML = "La division es: " + (num1 / num2);
+    }
+}
