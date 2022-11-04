@@ -108,3 +108,19 @@ function calcularSalario(){
     document.getElementById('txtIR').innerHTML = "IR: C$ " + ir.toFixed(2);
     document.getElementById('txtSalNeto').innerHTML = "Salario Neto: C$ " + SalNeto.toFixed(2);
 }
+
+<div class="container-fluid bg-dark text-white text-center">
+    <div  class="row mb-4">
+        <h2 class="display-4">Tecnico Medio en Programacion - 11mo
+Grado</h2>
+    </div>
+    <div class="row mb-3">
+        <h2 class="display-6">Integrante</h2>
+        <div class="col">Mache Lopez</div>
+    </div>
+    <div class="row">
+        <p>
+            &copy; Todos los derechos reservados - 2022                                                                                                                                                                             
+        </p>
+    </div>
+</div>
