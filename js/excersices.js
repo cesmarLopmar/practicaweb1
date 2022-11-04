@@ -53,3 +53,36 @@ function CalcularOperacion(){
         document.getElementById('txt2Result').innerHTML = "La division es: " + (num1 / num2);
     }
 }
+
+<div class="container py-3" id="ej3">
+    <h1 class="text-center display txt-primary">
+        calculo del salario Nicaragüense
+    </h1>
+    <form class="text-white">
+        <div class="form-text mb-2">
+            El calculo del salario en nicaragua se divide en dos partes, primero se 
+            calcula el <code>INSS</code> que es el <strong>7%</strong> del salario base.
+            Luego calculamos el <code>IR</code>, que dependiendo del exelente anual 
+            el valor varía. Al restarle estos datos al salario base obtenemos nuestro Salario Neto.
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="inputSalario" placeholder="Ingrese el salario"></input>
+            <label for="inputSalario" class="text-secondary">Salario</label>
+        </div>
+        <div class="mb-3">
+            <button type="button" class="btn btn-success" onclick="calcularSalario()">Calcular Salario</button>
+        </div>
+        <div class="mb-3">
+            <label id="txtINSS" class="form-label">INSS: </label>
+        </div>
+        <div class="mb-3">
+            <label id="txtIR" class="form-label">IR: </label>
+        </div>
+        <div class="mb-3">
+            <label id="txtSalNeto" class="form-label">Salario Neto: </label>
+        </div>
+    </form>
+</div>
+
+
+
